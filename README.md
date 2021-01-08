@@ -1,4 +1,4 @@
-Project Catherine Quinlan: Energy project based on Speed of Turbine to calculate power supplied November 2020
+Project Catherine Quinlan: Wind Turbine Energy project based on Wind speed to calculate power supplied November 2020
 
 
 # MLSWindproject

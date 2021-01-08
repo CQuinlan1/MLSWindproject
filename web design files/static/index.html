@@ -5,6 +5,14 @@
 <!-- Adapting from Ian McLoughlin's rando files -->
 <html lang="en">
   <head>
+    <style>
+        body {
+          background-image: url('../windturbines.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        </style>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,11 +25,18 @@
   <body>
     <h3>Catherine Quinlan Machine Learning project Student number: 00376296 GMIT</h3>
     <hr>
-    <p>       This project is based on the predicting wind turbine power output from wind speed values  as per the data set given</p>
+    <p>       This project is based on  predicting wind turbine power output from wind speed values  as per the data set given</p>
+    <p>To predict the electricity produced by a turbine input a wind speed below and press one of the estimating methods  available</p>
+    <p></p>Please input a wind speed  ........</p>
     <div class="container">
         <div class="row">
-          <div class="col-sm">
-            <input class="form-control" id="output" type="text" placeholder="Please input your value here.." readonly>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Enter your random wind speed between 0 and 25  </label>
+                <input type="number" class="form-control" id="replynumber" placeholder="Please enter the value and then click below ..."min="0" data-bind="value:replyNumber" />
+              </div>
+    
+
+
           </div>
         </div>
         <div class="row">
@@ -32,10 +47,10 @@
             <button type="button" class="btn btn-primary" id="linear-button">Normal</button>
           </div>
           <div class="col-sm">
-            <button type="button" class="btn btn-danger" id="quadratic-button">Quadratic</button>
+            <button type="button" class="btn btn-danger" id="quadratic-button">Polynomial regression</button>
           </div>
           <div class="col-sm">
-            <button type="button" class="btn btn-warning" id="cubic-button">Cubic</button>
+            <button type="button" class="btn btn-warning" id="cubic-button">Logistic regression</button>
         </div>
       </div>
 
